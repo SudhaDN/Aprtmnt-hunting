@@ -1,0 +1,37 @@
+Approach and Method
+
+1)we need to find the optimal location (index). 
+2)For this we need to calculate the distance of each node.
+3)To do this we need a loop to calculate the distance over each node.
+4)If the requirement is present at the node ,then we have to return the distance between two nodes.
+    i)The distance requirement can be satisfied by multiple nodes.
+        --> there is same node then the distance is zero.
+        --> if it is on other multiple nodes then we have find the closest distance.
+        --> if there is multiple nodes which satisfy the requirment, then keep track of minmum distance using Math.min function to update closest distance.
+        --> So I've intialized the closest distance to maximum possible value as distance.if the node with less distance
+            meets the requirement we will update the closest distance to that value.
+
+    ii) To check the distance,keep one index at the current node and another at the requirement satisfied node.
+    iii)For this we need two loops. ie one for distance and another for checking each requirement.
+    iv) For this i took 4 nodes.
+
+5)when I'm at node 1 school is in same block and gym in block 2 ,but I have to travel four block for store.
+
+6)I don't have to store all these values as I only need maximun disatnce at each node required in order to find out what is 
+  optimal node.
+
+7) For this, I'm updating maximum distance one needs to travel at each node with maximum values that are initialized to 0
+   using array.map function and closest distance of any requirement at that node.So for node 1 it will be 4 from the array and I will replace that value in array using index.
+
+8)Ten finally as we have maximum distances ,we now have to find the all the ideal nodes that can have least possible distances.
+
+9)This can  happen at multiple number of nodes as array.indexOf() only returns first possible location and array.lastIndexOf 
+   returns only last, So I've written one more loop to find all possible locations.
+
+
+
+
+
+
+
+
